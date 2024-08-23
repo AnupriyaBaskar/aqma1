@@ -1,0 +1,105 @@
+.topbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    flex-wrap: wrap;
+    background-color: #333;
+    padding-left: 18rem;
+    padding-right: 18rem;
+  }
+  
+  .top-ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+    flex-wrap: wrap;
+  }
+  
+  .top-li {
+    margin: 5px 15px 5px 0;
+  }
+  
+  .top-active {
+    font-weight: bold;
+  }
+  
+  .contact-info {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  .contact-info .top-li {
+    margin-bottom: 5px;
+  }
+  
+  /* Responsive styling */
+  @media (max-width: 1024px) {
+    .topbar {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+  
+    .top-ul {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+  
+    .contact-info {
+        margin-top: 10px;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .topbar {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+  
+    .top-ul {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+  
+    .contact-info {
+        margin-top: 10px;
+    }
+  }
+  
+  @media (max-width: 576px) {
+    .topbar {
+        padding: 5px;
+    }
+  
+    .top-li {
+        margin: 5px 10px 5px 0;
+    }
+  
+    .contact-info .top-li {
+        margin-bottom: 3px;
+    }
+  }
+  
+  /* Font Awesome icons */
+  .fa-phone, .fa-envelope {
+    margin-right: 5px;
+  }
+
+  .top-li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+.top-li a:hover:not(.active) {
+    background-color: #111;
+  }
+  
+.top-active {
+    background-color: #04AA6D;
+  } 

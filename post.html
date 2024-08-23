@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aqma | Post</title>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="footer.css">
+    <style>
+       
+
+        /* Main Content */
+.blog-post {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Increased shadow for more elevation */
+    max-width: 65%; /* Increase width to occupy more space */
+    width: 100%;
+}
+
+.blog-post h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.blog-post h6 {
+    text-align: center;
+}
+
+.blog-post p {
+    font-size: 1rem;
+    line-height: 1.6;
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+.blog-post img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    margin: 20px auto;
+    border-radius: 10px;
+}
+
+.sidebar {
+    margin-left: 20px;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Same shadow effect as blog post */
+    max-width: 30%; /* Decrease width to make it narrower */
+}
+
+.sidebar h3 {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.sidebar ul {
+    list-style: none;
+    padding: 0;
+}
+
+.sidebar ul li {
+    margin-bottom: 10px;
+}
+
+.sidebar ul li a {
+    text-decoration: none;
+    color: #007bff;
+    display: block;
+    white-space: nowrap; /* Prevent text from wrapping */
+    overflow: hidden; /* Hide overflowed text */
+    text-overflow: ellipsis; /* Add ellipses */
+    max-width: 100%; /* Ensure it fits within the container */
+}
+
+.sidebar ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Responsive Design */
+@media (max-width: 1200px) {
+    .sidebar {
+        margin-left: 10px;
+    }
+}
+
+@media (max-width: 992px) {
+    .blog-post {
+        max-width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .sidebar {
+        max-width: 100%;
+        margin: 0;
+    }
+}
+
+@media (max-width: 768px) {
+    main.container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .blog-post, .sidebar {
+        max-width: 100%;
+        margin: 10px;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Reduced shadow for smaller screens */
+    }
+
+    .sidebar {
+        order: 1;
+    }
+}
+
+@media (max-width: 576px) {
+    .blog-post h2 {
+        font-size: 1.5rem;
+    }
+
+    .sidebar h3 {
+        font-size: 1.2rem;
+    }
+
+    .blog-post, .sidebar {
+        padding: 15px;
+    }
+}
+
+
+
+    </style>
+</head>
+<body>
+    <!-- Topbar -->
+    <div class="topbar container-fluid">
+        <div>
+            <ul class="top-ul">
+                <li class="top-li"><a class="top-active" href="Blog-post-july1.html">Important Notices</a></li>
+            </ul>
+        </div>
+        <div>
+            <ul class="top-ul">
+                <li class="top-li"><a href="#home"><i class="fa-solid fa-phone"></i></a></li>
+                <li class="top-li"><a href="#contact">Contact</a></li>
+                <li class="top-li"><a href="#news">+91 90434 44751</a></li>
+                <li class="top-li"><a href="#contact"><i class="fa-solid fa-envelope"></i></a></li>
+                <li class="top-li"><a href="#news">E-mail</a></li>
+                <li class="top-li"><a href="#news">aqma.iitm.in@gmail.com</a></li>
+                <li class="top-li"><a class="top-active" href="">Join us</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Header -->
+    <header class="navbar navbar-expand-lg">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <img src="logo.png" alt="Bootstrap" width="60" height="60">
+            </a>
+            <a class="navbar-brand" href="#">Air Quality Management Association</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                    <li class="nav-item"><a class="nav-link active" aria-current="page" href="index.html" target="_blank">Home</a></li>
+                    <li class="nav-item"><a class="nav-link active" aria-current="page" href="about_us_final.html" target="_blank">About Us</a></li>
+                    <li class="nav-item"><a class="nav-link active" aria-current="page" href="members.html" target="_blank">Office Bearers</a></li>
+                    <li class="nav-item"><a class="nav-link active" aria-current="page" href="price.html" target="_blank">Membership</a></li>
+                    <li class="nav-item"><a class="nav-link active" aria-current="page" href="Blog-post-july1.html" target="_blank">Events</a></li>
+                    <li class="nav-item"><a class="nav-link active" aria-current="page" href="Gallery_final.html" target="_blank">Gallery</a></li>
+                </ul>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="container" style="display: flex; justify-content: center; align-items: flex-start; margin-top: 100px; margin-bottom: 100px;">
+        <div id="post-content" class="blog-post">
+            <!-- Content will be dynamically loaded here -->
+        </div>
+       <a href="http://" target="_blank" rel="noopener noreferrer"></a>
+        
+
+    </main>
+
+   
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-container">
+            <div class="footer-row">
+                <div class="footer-column">
+                    <h4>AQMA</h4>
+                    <img src="logo.png" width="100rem" height="100rem" alt="Logo" class="footer-logo">
+                </div>
+                <div class="footer-column">
+                    <h4>Quick links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="Gallery_final.html">Gallery</a></li>
+                        <li><a href="#">Contact Us</a></li>
+                        <li><a href="about_us_final.html">About Us</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h4>Quick links</h4>
+                    <ul>
+                        <li><a href="members.html">Our partners</a></li>
+                        <li><a href="price.html">Membership</a></li>
+                        <li><a href="Blog-post-july1.html">Events</a></li>
+                        <li><a href="#">Newsletter</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column" style="width: 400px;">
+                    <h4>Our Vision</h4>
+                    <p>The main objective of the Association is to enhance the understanding of the science behind air quality by promoting knowledge on clean air and understanding best working practices.</p>
+                </div>
+                <div class="footer-column">
+                    <h4>Newsletter</h4>
+                    <form action="#" method="post">
+                        <input type="email" class="form-control footer-input" placeholder="Enter your email">
+                        <button type="button" class="btn footer-subscribe-btn">Subscribe</button>
+                    </form>
+                </div>
+            </div>
+            <hr>
+            <div class="footer-row footer-bottom-row">
+                <div class="footer-column">
+                    <p>&#169; 2024- AQMA - All rights reserved. | Privacy policy</p>
+                </div>
+                <div class="footer-social-icons">
+                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            fetch('getblogdata.php') // Replace with your JSON data source
+                .then(response => response.json())
+                .then(data => {
+                    const urlParams = new URLSearchParams(window.location.search);
+                    const postId = urlParams.get('id');
+                    
+                    const postContent = document.getElementById('post-content');
+
+                    if (postId !== null && postId >= 0 && postId < data.length) {
+                        const post = data[postId];
+                        postContent.innerHTML = `
+                            <article class="post" style: "text-align: left;">
+                                <h2 class="post-title">${post.title}</h2>
+                                <h6 class="post-date">Posted on ${post.date}</h6>
+                                <img src="${post.image}" alt="Blog post image" class="post-image img-fluid">
+                                <div class="post-content" style="text-align: left;">
+                                    <p>${post.content}</p>
+                                    <p><a href="#" target="_blank" rel="noopener noreferrer">${post.link1}</a></p>
+                                    <p>Register here <a href="${post.link}" target="_blank" rel="noopener noreferrer">${post.link}</a></p>
+                                    
+                                    <p>Join the Live on Face book <a href="${post.other_contents}" target="_blank" rel="noopener noreferrer">${post.other_contents}</a></p>
+                                    <p>${post.Eventnumber}</p>
+                                    <p>${post.Eventpassword}</p>
+                                    
+                                </div>
+                            </article>
+                        `;
+                    } else {
+                        postContent.innerHTML = '<p>Post not found</p>';
+                    }
+                })
+                .catch(error => {
+                    console.error('Error fetching data:', error);
+                    postContent.innerHTML = '<p>Error loading post</p>';
+                });
+        });
+    </script>
+</body>
+</html>
